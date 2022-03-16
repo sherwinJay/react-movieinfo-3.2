@@ -71,6 +71,7 @@ const Banner = ({content, mediaType, releaseDate}) => {
           href={`https://www.youtube.com/watch?v=${videos.results[0].key}`}
           className={ratingContainer}
           target="_blank"
+          rel="noopener"
         >
           <PlayCircleFilledWhiteIcon/>
           Play Trailer
