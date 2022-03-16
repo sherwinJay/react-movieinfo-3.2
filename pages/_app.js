@@ -1,7 +1,16 @@
+import { useState } from 'react'
+import { Layout } from '../components'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+
+  const [isDark, setIsDark] = useState(true);
+
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 export default MyApp
