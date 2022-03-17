@@ -36,7 +36,6 @@ export const bannerContainer = css`
     & > span {
       display: none !important;
     }
-
   }
 `;
 
