@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import useFetch from '../../axios/useFetch';
 import { Banner, LeadCast, Loading, Recommendation, SidebarContent } from '../../components';
 import ScrollToTop from '../../utilities/scrollTop';
-import { castContainer, contentContainer, recommendationContainer, sideContentContainer } from './styles';
+import { castContainer, contentContainer, recommendationContainer, sideContentContainer } from '../../constant/pageStyles';
 
 const TVShows = () => {
   const router = useRouter();
