@@ -45,7 +45,8 @@ const Banner = ({content, mediaType, releaseDate}) => {
       );
     } else {
       return ( 
-        <Image className={moviePoster} 
+        <Image 
+          className={moviePoster} 
           src={`https://image.tmdb.org/t/p/w342${poster}`} 
           alt={title}
           width={280}

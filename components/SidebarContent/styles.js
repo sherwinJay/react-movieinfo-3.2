@@ -6,20 +6,24 @@ export const sidebar = css`
   grid-gap: 1em;
   color: #fff;
   height: fit-content;
+  font-size: 0.9rem;
 
   & h4 {
     margin: 0;
     line-height: 28px;
+    font-size: 1.15rem;
   }
   @media screen and (max-width: 480px) {
     font-size: 0.8rem;
 
-    & h2 {
-      font-size: 1.15rem;
+    & h4 {
+      font-size: 1rem;
     }
-
   }
 `;
+
+
+
 export const prodCompany = css`
   margin-bottom: 0.3em;
 `;

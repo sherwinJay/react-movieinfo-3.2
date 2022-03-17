@@ -23,7 +23,7 @@ export const bannerContainer = css`
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
     grid-gap: 0;
-    grid-template-rows: 0 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     overflow: hidden;
   }
@@ -32,6 +32,11 @@ export const bannerContainer = css`
     font-size: 0.8rem;
     max-height: 400px;
     height: 400px;
+
+    & > span {
+      display: none !important;
+    }
+
   }
 `;
 
@@ -78,6 +83,8 @@ export const noMoviePoster = css`
 
   @media screen and (max-width: 900px) {
     display: none !important;
+    width: 0;
+    height: 0;
   }
 `;
 export const iconWrapper = css`

@@ -22,12 +22,17 @@ export const movieListContainer = css`
   position: absolute;
   width: 100%;
   background-color: #fff;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px;
   z-index: 5;
   overflow: hidden;
+  margin-top: 5px;
+
+
   & li a{
-    padding: 0.3em 1.5em;
+    padding: 0.4em 1.5em;
     display: block;
+    border-bottom: 1px solid #eee;
+
     &:hover{
       background-color: #dedede;
     }
