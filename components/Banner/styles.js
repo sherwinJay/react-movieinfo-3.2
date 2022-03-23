@@ -10,7 +10,7 @@ export const bannerBg2 = css`
 
 export const bannerContainer = css`
   display: grid;
-  grid-template-columns: auto fit-content(100%);
+  grid-template-columns: 280px fit-content(100%);
   grid-gap: 1em;
   max-height: 480px;
   height: 480px;
@@ -26,16 +26,17 @@ export const bannerContainer = css`
     grid-template-rows: 1fr;
     align-items: center;
     overflow: hidden;
+
+    & > span {
+      display: none !important;
+    }
+
   }
 
   @media screen and (max-width: 480px) {
     font-size: 0.8rem;
     max-height: 400px;
     height: 400px;
-
-    & > span {
-      display: none !important;
-    }
   }
 `;
 
@@ -74,7 +75,7 @@ export const moviePoster = css`
 export const noMoviePoster = css`
   width: 280px;
   height: 420px;
-  background-color: #ccc;
+  background-color: #f14066;
   border-radius: 20px;
   align-items: center;
   justify-content: center;

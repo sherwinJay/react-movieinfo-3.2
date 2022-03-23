@@ -38,7 +38,6 @@ export const thumbnailsContainer = css`
     min-height: 200px;
   }
 `;
-
 export const thumbnailsContainer2 = css`
   display: grid;
   grid: 180px 180px / repeat(5, 1fr);
@@ -98,6 +97,7 @@ export const thumbnailImgContainer = css`
   border-radius: 0.5em;
   overflow: hidden;
   min-height: 100%;
+  height: 100%;
   max-height: 225px;
   transition: all .5s ease-in-out;
   
@@ -123,6 +123,14 @@ export const thumbnailImg = css`
   left: 50%;
   position: absolute;
 `;
+
+export const noThumbnail = css`
+  background-color: #f14066;
+  display: grid;
+  place-content: center;
+  height: 100%;
+`;
+
 
 export const thumbnailInfo = css`
   position: absolute;
