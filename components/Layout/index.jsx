@@ -15,7 +15,7 @@ const Layout = ({children}) => {
         isOpen={isOpen}
       />
       {
-        isOpen && <MobileMenu setIsOpen={setIsOpen} />
+        isOpen && <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       }
 
       { children }

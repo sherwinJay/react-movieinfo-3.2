@@ -14,7 +14,7 @@ const Header = ({isOpen, toggle}) => {
           </a>
         </Link>
         <div className={searchContainer}>
-          <SearchShow />
+          <SearchShow isOpen={isOpen} />
         </div>
         <div className={mobileMenu} >
           <MenuIcon onClick={ () => toggle() } />

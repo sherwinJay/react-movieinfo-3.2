@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { displayContent, formContainer, inputStyle, mediaType, movieListContainer, noResult } from './styles';
 
-const SearchShow = ({setIsOpen}) => {
+const SearchShow = ({isOpen, setIsOpen}) => {
   const [searchVal, setSearchVal] = useState("");
   const [movieList, setMovielist] = useState([]);
   const [focus, setFocus] = useState(false);
+  const isMobile = setIsOpen ? true : false;
   // const { data: showList } = useFetch(`https://api.themoviedb.org/3/search/multi?api_key=${process.env.MOVIE_DATABASE_ID}&language=en-US&query=${searchVal}&page=1&include_adult=false`)
   
   useEffect(() => {
@@ -31,6 +32,9 @@ const SearchShow = ({setIsOpen}) => {
     // } else {
     //   setMovielist(showList?.results);
     // }
+    return () => {
+      setMovielist([])
+    }
   },[searchVal]);
 
   const _onBlur = () => {
@@ -58,7 +62,7 @@ const SearchShow = ({setIsOpen}) => {
         <Link href={`/${movie.media_type === 'movie' ? 'movies' : 'tv'}/${movie.id}`}>
           <a 
             onClick={() => {
-              // setIsOpen(false)
+              isMobile && setIsOpen(false);
               return setSearchVal('')
             }}
           >
