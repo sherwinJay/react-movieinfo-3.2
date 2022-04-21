@@ -6,8 +6,8 @@ import useFetch from "../../axios/useFetch";
 import { recommendationTitle, recommendContainer, recommendThumbnailContainer } from './styles';
 
 
-const Recommendation = ({mediaType}) => {
-  const { id } = router.query;
+const Recommendation = ({mediaType, id}) => {
+  // const { id } = router.query;
   const { data } = useFetch(`https://api.themoviedb.org/3/${mediaType}/${id}/recommendations?api_key=${process.env.MOVIE_DATABASE_ID}&language=en-US&page=1`);
   const [background, setBackground] = useState('');
 

@@ -58,7 +58,7 @@ const SearchShow = ({setIsOpen}) => {
         <Link href={`/${movie.media_type === 'movie' ? 'movies' : 'tv'}/${movie.id}`}>
           <a 
             onClick={() => {
-              setIsOpen(false)
+              // setIsOpen(false)
               return setSearchVal('')
             }}
           >
