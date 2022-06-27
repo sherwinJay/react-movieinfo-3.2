@@ -1,6 +1,7 @@
 import { Banner, LeadCast, Loading, Recommendation, SidebarContent } from '../../components';
 import ScrollToTop from '../../utilities/scrollTop';
 import { castContainer, contentContainer, recommendationContainer, sideContentContainer } from '../../styles/pageStyles';
+import Head from 'next/head';
 
 const TVShows = ({tvList, pageId}) => {
 
