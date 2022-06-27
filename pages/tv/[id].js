@@ -6,6 +6,9 @@ const TVShows = ({tvList, pageId}) => {
 
   return (
     <>
+      <Head>
+        <title>{`TV Page - ${pageId}`}</title>
+      </Head>
       <Banner
         content={tvList}
         releaseDate={tvList.first_air_date}

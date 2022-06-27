@@ -1,11 +1,14 @@
 import React from 'react'
 import axios from 'axios';
-
+import Head from 'next/head';
 import { Loading, Slider, Thumbnails } from '../components'
 
 const Home = ({ popularMovie, upcomingMovie, nowPlayingMovie, popularTV }) => {
   return (
     <>
+      <Head>
+        <title>Movie Information</title>
+      </Head>
       <Slider 
         category={popularMovie}
         isMovie={false}

@@ -1,12 +1,16 @@
 import { Banner, LeadCast, Loading, Recommendation, SidebarContent } from '../../components';
 import ScrollToTop from '../../utilities/scrollTop';
 import { castContainer, contentContainer, recommendationContainer, sideContentContainer } from '../../styles/pageStyles';
+import Head from 'next/head';
 
 
 const Movies = ({movieList, pageId}) => {
 
   return (
     <>
+       <Head>
+        <title>{`Movies Page - ${pageId}`}</title>
+      </Head>
       <Banner 
       content={movieList}
       releaseDate={movieList.release_date}
