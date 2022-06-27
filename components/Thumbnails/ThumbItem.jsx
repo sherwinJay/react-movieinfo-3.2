@@ -22,6 +22,7 @@ const ThumbItem = ({title, thumbID, isMovie, overview, rating, backdrop, poster,
           layout='fill'
           placeholder='blur'
           blurDataURL={`https://image.tmdb.org/t/p/w780/${customImg}`}
+          alt={title}
         />
       );
     }
