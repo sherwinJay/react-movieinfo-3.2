@@ -3,6 +3,7 @@ import Link from "next/link";
 import { thumbnailImgContainer, thumbnailImg, thumbnailInfo, viewBtn, noThumbnail } from './styles';
 
 
+
 const ThumbItem = ({title, thumbID, isMovie, overview, rating, backdrop, poster, template}) => {
 
   const customImg = template === "1" ? poster : backdrop;
@@ -47,4 +48,4 @@ const ThumbItem = ({title, thumbID, isMovie, overview, rating, backdrop, poster,
   )
 }
 
-export default ThumbItem  
+export default ThumbItem 

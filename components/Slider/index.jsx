@@ -25,6 +25,7 @@ const Slider = ({category, isMovie}) => {
         cancelOnInteraction={false}
         interval={6000}
         bullets={true}
+        alt={movieTitle}
       >
         { 
           category?.results?.slice(0,5).map((movie) => {
